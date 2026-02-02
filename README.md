@@ -9,6 +9,28 @@ Mission Learning Statement
 This repo contains the original `martin.py` agentic release from Oct 2023.
 It demonstrates early command-planning behavior and automated execution loops.
 
+## Architecture
+```
+User Prompt
+    |
+    v
+Prompt Parser
+    |
+    v
+Command Extractor
+    |
+    v
+Safety Guardrails
+    |
+    v
+Executor (system actions)
+    |
+    v
+Logs / Feedback
+    |
+    └──> Back to Prompt Parser
+```
+
 ## Quickstart
 ```bash
 python martin.py
